@@ -4,11 +4,13 @@
 
 **UFUQ Engineers — Scholarship Guides (Arabic, free PDFs)**
 
-اثنا عشر دليلًا عمليًا بالعربية لمن يبحث عن **ماجستير أو دراسات عليا ممولة**، موجّهة لخريجي **هندسة الحاسوب والكهرباء** ومن حولهم، وتراعي ظروف الطلاب الفلسطينيين وطلاب غزة: الأوراق، والتأشيرة، والخروج من القطاع. المعلومات محدّثة حتى **نوفمبر 2026** للقبول في سبتمبر 2027.
+اثنا عشر دليلًا، ومعها كتاب «بوابة المنح» الذي يدلّك على الدليل المناسب، عمليًا بالعربية لمن يبحث عن **ماجستير أو دراسات عليا ممولة**، موجّهة لخريجي **هندسة الحاسوب والكهرباء** ومن حولهم، وتراعي ظروف الطلاب الفلسطينيين وطلاب غزة: الأوراق، والتأشيرة، والخروج من القطاع. المعلومات محدّثة حتى **نوفمبر 2026** للقبول في سبتمبر 2027.
 
 [![Latest release](https://img.shields.io/badge/release-v1-0b6b5d)](https://github.com/ahmedmsabha/ufuq-scholarship-guides/releases/tag/v1)
 ![Language](https://img.shields.io/badge/language-Arabic-blue)
 ![Updated](https://img.shields.io/badge/updated-Nov%202026-lightgrey)
+
+**[📘 ابدأ من هنا: بوابة المنح الدراسية (كتاب 10 صفحات يوجّهك إلى كل الأدلة)](https://github.com/ahmedmsabha/ufuq-scholarship-guides/releases/download/v1/Ufuq-00-Scholarship-Gateway-Digital.pdf)**
 
 **[⬇ صفحة التحميل (كل الكتب)](https://github.com/ahmedmsabha/ufuq-scholarship-guides/releases/tag/v1)**
 
@@ -16,6 +18,7 @@
 
 | # | الكتاب | الصفحات | تحميل |
 |---|---|---|---|
+| 0 | **بوابة المنح الدراسية** (المدخل إلى كل الأدلة) | 10 | [PDF](https://github.com/ahmedmsabha/ufuq-scholarship-guides/releases/download/v1/Ufuq-00-Scholarship-Gateway-Digital.pdf) |
 | 12 | تقويم المنح والقبولات 2027 (ابدأ من هنا) | 250 | [PDF](https://github.com/ahmedmsabha/ufuq-scholarship-guides/releases/download/v1/Ufuq-12-Scholarship-Calendar-2027-Digital.pdf) |
 | 8 | أوروبا: 26 دولة والمنح العابرة للدول | 500 | [PDF](https://github.com/ahmedmsabha/ufuq-scholarship-guides/releases/download/v1/Ufuq-08-Europe-All-Countries-Digital.pdf) |
 | 9 | خارج أوروبا والغرب: المنح الحكومية | 389 | [PDF](https://github.com/ahmedmsabha/ufuq-scholarship-guides/releases/download/v1/Ufuq-09-Government-Scholarships-Outside-Europe-Digital.pdf) |
