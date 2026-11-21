@@ -2,6 +2,8 @@ name: Publish book to release
 
 # Push one or more PDFs to the `publish` branch under books/ and they replace
 # the matching files in the v1 release. Download links never change.
+# publish-book.sh replaces the whole branch with a single commit on every run,
+# so PDFs never accumulate in git history.
 on:
   push:
     branches: [publish]
@@ -44,13 +46,3 @@ jobs:
             gh release upload v1 "$f" --clobber
           done
           { echo "### Published"; for f in $FILES; do echo "- $(basename "$f")"; done; } >> "$GITHUB_STEP_SUMMARY"
-
-      - name: Clear PDFs from git history (keeps the repo small)
-        run: |
-          set -euo pipefail
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git checkout --orphan clean
-          git rm -rf . -q
-          git commit --allow-empty -q -m "Published; PDFs cleared from history"
-          git push -f origin clean:publish
