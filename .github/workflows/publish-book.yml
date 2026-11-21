@@ -1,0 +1,56 @@
+name: Publish book to release
+
+# Push one or more PDFs to the `publish` branch under books/ and they replace
+# the matching files in the v1 release. Download links never change.
+on:
+  push:
+    branches: [publish]
+    paths: ['books/*.pdf']
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-book
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Upload PDFs to release v1 (replace existing)
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BEFORE: ${{ github.event.before }}
+        run: |
+          set -euo pipefail
+          if [ -n "$BEFORE" ] && git cat-file -e "$BEFORE^{commit}" 2>/dev/null; then
+            FILES=$(git diff --name-only --diff-filter=AM "$BEFORE" HEAD -- 'books/*.pdf')
+          else
+            FILES=$(ls books/*.pdf)
+          fi
+          [ -n "$FILES" ] || { echo "No PDFs to publish"; exit 0; }
+          for f in $FILES; do
+            name=$(basename "$f")
+            case "$name" in
+              Ufuq-[0-9][0-9]-*-Digital.pdf) ;;
+              *) echo "::error::Bad file name: $name (expected Ufuq-NN-Name-Digital.pdf)"; exit 1 ;;
+            esac
+            echo "Publishing $name ($(du -h "$f" | cut -f1))"
+            gh release upload v1 "$f" --clobber
+          done
+          { echo "### Published"; for f in $FILES; do echo "- $(basename "$f")"; done; } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Clear PDFs from git history (keeps the repo small)
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout --orphan clean
+          git rm -rf . -q
+          git commit --allow-empty -q -m "Published; PDFs cleared from history"
+          git push -f origin clean:publish
