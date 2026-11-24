@@ -1,0 +1,48 @@
+name: Publish book to release
+
+# Push one or more PDFs to the `publish` branch under books/ and they replace
+# the matching files in the v1 release. Download links never change.
+# publish-book.sh replaces the whole branch with a single commit on every run,
+# so PDFs never accumulate in git history.
+on:
+  push:
+    branches: [publish]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-book
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Upload PDFs to release v1 (replace existing)
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BEFORE: ${{ github.event.before }}
+        run: |
+          set -euo pipefail
+          if [ -n "$BEFORE" ] && git cat-file -e "$BEFORE^{commit}" 2>/dev/null; then
+            FILES=$(git diff --name-only --diff-filter=AM "$BEFORE" HEAD -- 'books/*.pdf')
+          else
+            FILES=$(ls books/*.pdf)
+          fi
+          [ -n "$FILES" ] || { echo "No PDFs to publish"; exit 0; }
+          for f in $FILES; do
+            name=$(basename "$f")
+            case "$name" in
+              Ufuq-[0-9][0-9]-*-Digital.pdf) ;;
+              *) echo "::error::Bad file name: $name (expected Ufuq-NN-Name-Digital.pdf)"; exit 1 ;;
+            esac
+            echo "Publishing $name ($(du -h "$f" | cut -f1))"
+            gh release upload v1 "$f" --clobber
+          done
+          { echo "### Published"; for f in $FILES; do echo "- $(basename "$f")"; done; } >> "$GITHUB_STEP_SUMMARY"
