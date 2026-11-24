@@ -20,7 +20,7 @@
 |---|---|---|---|
 | 0 | **بوابة المنح الدراسية** (المدخل إلى كل الأدلة) | 10 | [PDF](https://github.com/ahmedmsabha/ufuq-scholarship-guides/releases/download/v1/Ufuq-00-Scholarship-Gateway-Digital.pdf) |
 | 12 | تقويم المنح والقبولات 2027 (ابدأ من هنا) | 250 | [PDF](https://github.com/ahmedmsabha/ufuq-scholarship-guides/releases/download/v1/Ufuq-12-Scholarship-Calendar-2027-Digital.pdf) |
-| 13 | من الفكرة إلى القبول: كتابة وثائق التقديم (سيرة، SOP، رسالة دافع، مقترح بحثي) | 77 | [PDF](https://github.com/ahmedmsabha/ufuq-scholarship-guides/releases/download/v1/Ufuq-13-From-Idea-To-Admission-Digital.pdf) |
+| 13 | من الفكرة إلى القبول: كتابة وثائق التقديم (سيرة، SOP، رسالة دافع، مقترح بحثي) | 90 | [PDF](https://github.com/ahmedmsabha/ufuq-scholarship-guides/releases/download/v1/Ufuq-13-From-Idea-To-Admission-Digital.pdf) |
 | 8 | أوروبا: 26 دولة والمنح العابرة للدول | 500 | [PDF](https://github.com/ahmedmsabha/ufuq-scholarship-guides/releases/download/v1/Ufuq-08-Europe-All-Countries-Digital.pdf) |
 | 9 | خارج أوروبا والغرب: المنح الحكومية | 389 | [PDF](https://github.com/ahmedmsabha/ufuq-scholarship-guides/releases/download/v1/Ufuq-09-Government-Scholarships-Outside-Europe-Digital.pdf) |
 | 10 | أمريكا وكندا وأستراليا | 232 | [PDF](https://github.com/ahmedmsabha/ufuq-scholarship-guides/releases/download/v1/Ufuq-10-USA-Canada-Australia-Digital.pdf) |
