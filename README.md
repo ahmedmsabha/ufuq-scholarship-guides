@@ -25,7 +25,7 @@
 | 9 | خارج أوروبا والغرب: المنح الحكومية | 389 | [PDF](https://github.com/ahmedmsabha/ufuq-scholarship-guides/releases/download/v1/Ufuq-09-Government-Scholarships-Outside-Europe-Digital.pdf) |
 | 10 | أمريكا وكندا وأستراليا | 232 | [PDF](https://github.com/ahmedmsabha/ufuq-scholarship-guides/releases/download/v1/Ufuq-10-USA-Canada-Australia-Digital.pdf) |
 | 11 | إيراسموس موندوس (حاسوب وكهرباء) | 91 | [PDF](https://github.com/ahmedmsabha/ufuq-scholarship-guides/releases/download/v1/Ufuq-11-Erasmus-Mundus-Digital.pdf) |
-| 1 | بريطانيا | 117 | [PDF](https://github.com/ahmedmsabha/ufuq-scholarship-guides/releases/download/v1/Ufuq-01-UK-Digital.pdf) |
+| 1 | بريطانيا | 118 | [PDF](https://github.com/ahmedmsabha/ufuq-scholarship-guides/releases/download/v1/Ufuq-01-UK-Digital.pdf) |
 | 2 | هولندا | 261 | [PDF](https://github.com/ahmedmsabha/ufuq-scholarship-guides/releases/download/v1/Ufuq-02-Netherlands-Digital.pdf) |
 | 3 | إيطاليا | 334 | [PDF](https://github.com/ahmedmsabha/ufuq-scholarship-guides/releases/download/v1/Ufuq-03-Italy-Digital.pdf) |
 | 4 | إسبانيا | 241 | [PDF](https://github.com/ahmedmsabha/ufuq-scholarship-guides/releases/download/v1/Ufuq-04-Spain-Digital.pdf) |
