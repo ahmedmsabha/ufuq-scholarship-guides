@@ -4,7 +4,7 @@
 
 **UFUQ Engineers — Scholarship Guides (Arabic, free PDFs)**
 
-ثلاثة عشر دليلًا عمليًا بالعربية، ومعها كتاب «بوابة المنح» الذي يدلّك على الدليل المناسب، لمن يبحث عن **ماجستير أو دراسات عليا ممولة**، موجّهة لخريجي **هندسة الحاسوب والكهرباء** ومن حولهم، وتراعي ظروف الطلاب الفلسطينيين وطلاب غزة: الأوراق، والتأشيرة، والخروج من القطاع. المعلومات محدّثة حتى **نوفمبر 2026** للقبول في سبتمبر 2027.
+أربعة عشر دليلًا عمليًا بالعربية، ومعها كتاب «بوابة المنح» الذي يدلّك على الدليل المناسب، لمن يبحث عن **ماجستير أو دراسات عليا ممولة**، موجّهة لخريجي **هندسة الحاسوب والكهرباء** ومن حولهم، وتراعي ظروف الطلاب الفلسطينيين وطلاب غزة: الأوراق، والتأشيرة، والخروج من القطاع. المعلومات محدّثة حتى **نوفمبر 2026** للقبول في سبتمبر 2027.
 
 [![Latest release](https://img.shields.io/badge/release-v1-0b6b5d)](https://github.com/ahmedmsabha/ufuq-scholarship-guides/releases/tag/v1)
 ![Language](https://img.shields.io/badge/language-Arabic-blue)
@@ -26,6 +26,7 @@
 | 10 | أمريكا وكندا وأستراليا | 232 | [PDF](https://github.com/ahmedmsabha/ufuq-scholarship-guides/releases/download/v1/Ufuq-10-USA-Canada-Australia-Digital.pdf) |
 | 11 | إيراسموس موندوس (حاسوب وكهرباء) | 91 | [PDF](https://github.com/ahmedmsabha/ufuq-scholarship-guides/releases/download/v1/Ufuq-11-Erasmus-Mundus-Digital.pdf) |
 | 1 | بريطانيا | 118 | [PDF](https://github.com/ahmedmsabha/ufuq-scholarship-guides/releases/download/v1/Ufuq-01-UK-Digital.pdf) |
+| 14 | بريطانيا: الماجستير البحثي وCDT والدكتوراه | 340 | [PDF](https://github.com/ahmedmsabha/ufuq-scholarship-guides/releases/download/v1/Ufuq-14-UK-Research-Degrees-Digital.pdf) |
 | 2 | هولندا | 261 | [PDF](https://github.com/ahmedmsabha/ufuq-scholarship-guides/releases/download/v1/Ufuq-02-Netherlands-Digital.pdf) |
 | 3 | إيطاليا | 334 | [PDF](https://github.com/ahmedmsabha/ufuq-scholarship-guides/releases/download/v1/Ufuq-03-Italy-Digital.pdf) |
 | 4 | إسبانيا | 241 | [PDF](https://github.com/ahmedmsabha/ufuq-scholarship-guides/releases/download/v1/Ufuq-04-Spain-Digital.pdf) |
